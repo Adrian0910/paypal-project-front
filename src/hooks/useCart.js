@@ -16,7 +16,6 @@ export const useCart = () => {
         localStorage.setItem('cart', JSON.stringify(cart))
       }, [cart])
     
-    
       function addToCart(item){
     
         const itemExist = cart.findIndex((guitar) => guitar.id === item.id)
