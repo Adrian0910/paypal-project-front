@@ -1,8 +1,8 @@
 function Header({ cart, removeFromCart, increaseQuantity, decreaseQuantity, setCart, isEpmty, cartTotal}) {
 
     const payOrder = async () => {
-        const url = 'https://paypal-project-production.up.railway.app';
-        // https://paypal-project-production.up.railway.app/create-order
+        const url = 'https://paypal-project-production.up.railway.app/create-order';
+        
         
         const order = cart.map(guitar => {
             return {
