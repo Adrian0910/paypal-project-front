@@ -2,6 +2,7 @@ function Header({ cart, removeFromCart, increaseQuantity, decreaseQuantity, setC
 
     const payOrder = async () => {
         const url = 'https://paypal-project-production.up.railway.app/create-order';
+        // https://paypal-project-production.up.railway.app/create-order
         
         const order = cart.map(guitar => {
             return {
