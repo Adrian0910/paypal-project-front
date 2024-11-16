@@ -18,7 +18,7 @@ function App() {
   } = useCart()
 
   return (
-    <Router>
+    <>
     <Header 
       cart={cart}
       removeFromCart={removeFromCart}
@@ -49,7 +49,7 @@ function App() {
         </div>
     </footer>
 
-    </Router>
+    </>
   )
 }
 
